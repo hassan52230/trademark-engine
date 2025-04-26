@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
     "name": "trademark-theme",
     "version": "1.0.0",
@@ -9,4 +10,17 @@
     "devDependencies": {
         "tailwindcss": "^3.3.0"
     }
+=======
+{
+    "name": "trademark-theme",
+    "version": "1.0.0",
+    "description": "A WordPress theme for Trademark Engine",
+    "scripts": {
+        "build:css": "tailwindcss -i ./css/tailwind.css -o ./dist/output.css --minify",
+        "watch:css": "tailwindcss -i ./css/tailwind.css -o ./dist/output.css --watch"
+    },
+    "devDependencies": {
+        "tailwindcss": "^3.3.0"
+    }
+>>>>>>> 30443a6d13b92f51dac1800baea9a905d4eb27e4
 } 
