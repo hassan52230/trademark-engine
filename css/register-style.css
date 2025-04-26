@@ -1,0 +1,603 @@
+/**
+ * Register Page Styles
+ * Custom styles for the register.php template
+ */
+
+/* Hero Section */
+.register-hero {
+    background-color: #fff;
+    position: relative;
+    padding: 80px 0 0;
+    overflow: hidden;
+}
+
+.register-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45%;
+    height: 100%;
+    background-color: var(--light-peach);
+    z-index: 1;
+}
+
+.register-container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.hero-content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 500px;
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    font-weight: 800;
+    color: var(--navy);
+    margin-bottom: 20px;
+    line-height: 1.1;
+}
+
+.hero-text p {
+    font-size: 18px;
+    color: var(--navy);
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.hero-features {
+    list-style-type: none;
+    margin-bottom: 30px;
+}
+
+.hero-features li {
+    position: relative;
+    padding-left: 36px;
+    margin-bottom: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--navy);
+}
+
+.hero-features li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 24px;
+    height: 24px;
+    background-color: var(--light-orange);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.register-button {
+    display: inline-block;
+    background-color: var(--orange);
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 16px 32px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    margin-bottom: 24px;
+}
+
+.register-button:hover {
+    background-color: var(--light-orange);
+}
+
+.hero-ratings {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-top: 30px;
+}
+
+.rating-badge {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.rating-number {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--navy);
+}
+
+.rating-logo, .inc-logo, .shopper-logo {
+    height: 24px;
+    width: auto;
+}
+
+.inc-badge {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.inc-text {
+    font-size: 12px;
+    color: var(--gray);
+}
+
+.shopper-approved {
+    padding: 8px 16px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.recommendation-bar {
+    background-color: var(--navy);
+    padding: 16px 0;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.recommendation-bar p {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+}
+
+/* Pricing Section */
+.pricing-section {
+    padding: 80px 0;
+    background-color: var(--light-gray);
+}
+
+.pricing-section h2 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 16px;
+}
+
+.pricing-subtitle {
+    text-align: center;
+    font-size: 18px;
+    color: var(--gray);
+    max-width: 800px;
+    margin: 0 auto 50px;
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.pricing-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 32px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    position: relative;
+    transition: transform 0.3s;
+}
+
+.pricing-card:hover {
+    transform: translateY(-8px);
+}
+
+.pricing-card.popular {
+    border: 2px solid var(--orange);
+    transform: scale(1.05);
+}
+
+.pricing-card.popular:hover {
+    transform: scale(1.05) translateY(-8px);
+}
+
+.popular-badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--orange);
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 4px 16px;
+    border-radius: 20px;
+}
+
+.pricing-card h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 8px;
+}
+
+.package-subtitle {
+    font-size: 14px;
+    color: var(--gray);
+    margin-bottom: 24px;
+}
+
+.price {
+    font-size: 36px;
+    font-weight: 800;
+    color: var(--navy);
+    margin-bottom: 24px;
+}
+
+.price-suffix {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--gray);
+}
+
+.choose-button {
+    display: block;
+    text-align: center;
+    padding: 12px 24px;
+    background-color: white;
+    color: var(--navy);
+    border: 2px solid var(--navy);
+    border-radius: 4px;
+    font-weight: 600;
+    text-decoration: none;
+    margin-bottom: 24px;
+    transition: all 0.3s;
+}
+
+.choose-button:hover {
+    background-color: var(--navy);
+    color: white;
+}
+
+.choose-button.primary {
+    background-color: var(--orange);
+    color: white;
+    border-color: var(--orange);
+}
+
+.choose-button.primary:hover {
+    background-color: var(--light-orange);
+    border-color: var(--light-orange);
+}
+
+.includes-header {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: var(--navy);
+}
+
+.feature-list {
+    margin-bottom: 24px;
+}
+
+.feature-item {
+    display: flex;
+    margin-bottom: 16px;
+    gap: 12px;
+}
+
+.checkmark {
+    min-width: 24px;
+    height: 24px;
+    background-color: #e6f7ff;
+    color: var(--blue);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.feature-item span {
+    font-size: 14px;
+    color: var(--navy);
+}
+
+.feature-details {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    color: var(--blue);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.feature-details:hover {
+    text-decoration: underline;
+}
+
+/* Reviews Section */
+.reviews-section {
+    padding: 80px 0;
+    background-color: white;
+}
+
+.reviews-section h2 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 16px;
+}
+
+.reviews-subtitle {
+    text-align: center;
+    font-size: 18px;
+    color: var(--gray);
+    margin-bottom: 50px;
+}
+
+.testimonials-slider {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.testimonial {
+    background-color: var(--light-gray);
+    padding: 32px;
+    border-radius: 8px;
+}
+
+.testimonial-text {
+    font-size: 16px;
+    color: var(--navy);
+    margin-bottom: 16px;
+    font-style: italic;
+}
+
+.testimonial-author {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 4px;
+}
+
+.testimonial-source {
+    font-size: 14px;
+    color: var(--gray);
+}
+
+/* Info Section */
+.info-section {
+    padding: 80px 0;
+    background-color: var(--light-gray);
+}
+
+.info-section h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 24px;
+}
+
+.info-section p {
+    font-size: 16px;
+    color: var(--navy);
+    margin-bottom: 24px;
+    line-height: 1.6;
+    max-width: 800px;
+}
+
+.benefit-list {
+    margin-bottom: 24px;
+}
+
+.benefit-item {
+    display: flex;
+    margin-bottom: 16px;
+    gap: 12px;
+}
+
+.benefit-item .checkmark {
+    background-color: var(--light-peach);
+    color: var(--orange);
+}
+
+.benefit-item span {
+    font-size: 16px;
+    color: var(--navy);
+}
+
+/* Search Info Section */
+.search-info-section {
+    padding: 80px 0;
+    background-color: white;
+}
+
+.search-info-section h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 24px;
+}
+
+.search-info-section p {
+    font-size: 16px;
+    color: var(--navy);
+    margin-bottom: 24px;
+    line-height: 1.6;
+    max-width: 800px;
+}
+
+/* FAQ Section */
+.faq-section {
+    padding: 80px 0;
+    background-color: var(--light-gray);
+}
+
+.faq-section h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--navy);
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.faq-subtitle {
+    text-align: center;
+    font-size: 16px;
+    color: var(--gray);
+    margin-bottom: 50px;
+}
+
+.faq-list {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    margin-bottom: 16px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.faq-question {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--navy);
+}
+
+.faq-question:focus {
+    outline: none;
+}
+
+.arrow {
+    width: 20px;
+    height: 20px;
+    stroke: var(--navy);
+    stroke-width: 2;
+    fill: none;
+    transition: transform 0.3s;
+}
+
+.rotate-180 {
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    padding: 0 0 16px;
+    font-size: 16px;
+    color: var(--gray);
+    line-height: 1.6;
+}
+
+.faq-answer p {
+    margin-bottom: 16px;
+}
+
+.faq-answer p:last-child {
+    margin-bottom: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+/* CTA Section */
+.cta-section {
+    padding: 80px 0;
+    background-color: var(--peach);
+    text-align: center;
+}
+
+.cta-section h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 16px;
+}
+
+.cta-section p {
+    font-size: 18px;
+    color: var(--navy);
+    margin-bottom: 32px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .pricing-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .pricing-card.popular {
+        grid-column: span 2;
+        margin-bottom: 24px;
+    }
+    
+    .testimonials-slider {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .register-hero::before {
+        display: none;
+    }
+    
+    .hero-content-wrapper {
+        min-height: auto;
+    }
+    
+    .hero-text h1 {
+        font-size: 36px;
+    }
+    
+    .hero-ratings {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+    
+    .pricing-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .pricing-card.popular {
+        grid-column: auto;
+        transform: scale(1);
+    }
+    
+    .pricing-card.popular:hover {
+        transform: translateY(-8px);
+    }
+} 

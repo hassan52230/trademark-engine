@@ -1,0 +1,344 @@
+/**
+ * Monitoring Page Styles
+ * Custom styles for the monitoring.php template
+ */
+
+/* Hero Section */
+.monitoring-hero {
+    background-color: #fff;
+    position: relative;
+    padding: 80px 0 0;
+    overflow: hidden;
+}
+
+.monitoring-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45%;
+    height: 100%;
+    background-color: var(--light-peach);
+    z-index: 1;
+}
+
+.monitoring-container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.hero-content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 500px;
+}
+
+.hero-text {
+    max-width: 50%;
+}
+
+.hero-image {
+    max-width: 45%;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.image-placeholder {
+    width: 100%;
+    min-height: 400px;
+    background-color: rgba(0, 0, 0, 0.05);
+    border: 2px dashed rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--gray);
+    font-size: 14px;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    font-weight: 800;
+    color: var(--navy);
+    margin-bottom: 20px;
+    line-height: 1.1;
+}
+
+.hero-text p {
+    font-size: 18px;
+    color: var(--navy);
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.hero-features {
+    list-style-type: none;
+    margin-bottom: 30px;
+}
+
+.hero-features li {
+    position: relative;
+    padding-left: 36px;
+    margin-bottom: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--navy);
+}
+
+.hero-features li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 24px;
+    height: 24px;
+    background-color: var(--light-orange);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.monitoring-button {
+    display: inline-block;
+    background-color: var(--orange);
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 16px 32px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    margin-bottom: 24px;
+}
+
+.monitoring-button:hover {
+    background-color: var(--light-orange);
+}
+
+.hero-ratings {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-top: 30px;
+}
+
+.rating-badge {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.rating-number {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--navy);
+}
+
+.rating-logo, .inc-logo, .shopper-logo {
+    height: 24px;
+    width: auto;
+}
+
+.inc-badge {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.inc-text {
+    font-size: 12px;
+    color: var(--gray);
+}
+
+.shopper-approved {
+    padding: 8px 16px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.recommendation-bar {
+    background-color: var(--navy);
+    padding: 16px 0;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.recommendation-bar p {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+}
+
+/* FAQ Section */
+.faq-section {
+    padding: 80px 0;
+    background-color: var(--light-gray);
+}
+
+.faq-section h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--navy);
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.faq-subtitle {
+    text-align: center;
+    font-size: 16px;
+    color: var(--gray);
+    margin-bottom: 50px;
+}
+
+.faq-list {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    margin-bottom: 16px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.faq-question {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--navy);
+}
+
+.faq-question:focus {
+    outline: none;
+}
+
+.arrow {
+    width: 20px;
+    height: 20px;
+    stroke: var(--navy);
+    stroke-width: 2;
+    fill: none;
+    transition: transform 0.3s;
+}
+
+.rotate-180 {
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    padding: 0 0 16px;
+    font-size: 16px;
+    color: var(--gray);
+    line-height: 1.6;
+}
+
+.faq-answer p {
+    margin-bottom: 16px;
+}
+
+.faq-answer p:last-child {
+    margin-bottom: 0;
+}
+
+.faq-answer ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 16px;
+}
+
+.faq-answer li {
+    margin-bottom: 8px;
+    color: var(--gray);
+}
+
+.hidden {
+    display: none;
+}
+
+/* Monitoring Info Section */
+.monitoring-section {
+    padding: 80px 0;
+    background-color: var(--peach);
+    text-align: center;
+}
+
+.monitoring-section h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 16px;
+}
+
+.monitoring-subtitle {
+    font-size: 18px;
+    color: var(--navy);
+    margin-bottom: 32px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .hero-content-wrapper {
+        flex-direction: column;
+    }
+    
+    .hero-text, .hero-image {
+        max-width: 100%;
+    }
+    
+    .hero-image {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .monitoring-hero::before {
+        display: none;
+    }
+    
+    .hero-content-wrapper {
+        min-height: auto;
+    }
+    
+    .hero-text h1 {
+        font-size: 36px;
+    }
+    
+    .hero-ratings {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+    
+    .image-placeholder {
+        min-height: 300px;
+    }
+} 

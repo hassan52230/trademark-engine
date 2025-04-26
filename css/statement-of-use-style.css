@@ -1,0 +1,420 @@
+/**
+ * Statement of Use Page Styles
+ * Custom styles for the statement-of-use.php template
+ */
+
+:root {
+    --navy: #1a365d;
+    --navy-light: #2c5282;
+    --orange: #ff5722;
+    --orange-dark: #e64a19;
+    --red: #e74c3c;
+    --light-gray: #f8f9fa;
+    --gray: #6c757d;
+    --dark-gray: #495057;
+    --white: #ffffff;
+}
+
+.statement-of-use-page {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Hero Section */
+.sou-hero {
+    background-color: var(--navy);
+    color: var(--white);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.sou-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.sou-hero p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* CTA Button */
+.cta-button {
+    display: inline-block;
+    background-color: var(--red);
+    color: var(--white);
+    font-weight: 600;
+    padding: 12px 30px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.2s;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background-color: #c0392b;
+    color: var(--white);
+    transform: translateY(-2px);
+    text-decoration: none;
+}
+
+/* Trust Badges Section */
+.trust-badges {
+    padding: 40px 0;
+    background-color: var(--white);
+    border-bottom: 1px solid #e9ecef;
+}
+
+.badges-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.badge {
+    padding: 15px;
+    text-align: center;
+}
+
+.badge img {
+    max-height: 50px;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+.badge img:hover {
+    opacity: 1;
+}
+
+/* Process Section */
+.process-section {
+    padding: 80px 0;
+    background-color: var(--light-gray);
+    text-align: center;
+}
+
+.process-section h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: var(--navy);
+    font-weight: 700;
+}
+
+.process-section .subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: var(--dark-gray);
+}
+
+.process-steps {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.process-step {
+    flex: 0 0 30%;
+    padding: 30px 20px;
+    background-color: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    margin-bottom: 20px;
+}
+
+.process-step h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: var(--navy);
+    font-weight: 600;
+}
+
+.process-step p {
+    color: var(--dark-gray);
+}
+
+/* Benefits Section */
+.benefits-section {
+    padding: 80px 0;
+    background-color: var(--white);
+}
+
+.benefits-section h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: var(--navy);
+    font-weight: 700;
+    text-align: center;
+}
+
+.benefits-list {
+    max-width: 800px;
+    margin: 0 auto;
+    padding-left: 20px;
+}
+
+.benefits-list li {
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 10px;
+    font-size: 1.1rem;
+}
+
+.benefits-list li::before {
+    content: "•";
+    color: var(--red);
+    font-weight: bold;
+    position: absolute;
+    left: -15px;
+}
+
+/* Complete Process Section */
+.complete-process-section {
+    padding: 80px 0;
+    background-color: var(--light-gray);
+    text-align: center;
+}
+
+.complete-process-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: var(--navy);
+    font-weight: 700;
+}
+
+.complete-process-section p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    color: var(--dark-gray);
+}
+
+/* Pricing Section */
+.pricing-section {
+    padding: 80px 0;
+    background-color: var(--white);
+    text-align: center;
+}
+
+.pricing-box {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 8px;
+    background-color: var(--white);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.pricing-box h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: var(--navy);
+    font-weight: 700;
+}
+
+.price {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--red);
+    margin-bottom: 5px;
+}
+
+.price-note {
+    color: var(--gray);
+    margin-bottom: 30px;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+    padding: 80px 0;
+    background-color: var(--light-gray);
+}
+
+.testimonials-slider {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.testimonial {
+    flex: 0 0 48%;
+    margin-bottom: 30px;
+    background-color: var(--white);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.testimonial p {
+    font-style: italic;
+    margin-bottom: 20px;
+    color: var(--dark-gray);
+}
+
+.testimonial-author {
+    font-weight: 600;
+    color: var(--navy);
+}
+
+.testimonial-source {
+    color: var(--gray);
+    font-size: 0.9rem;
+}
+
+/* FAQ Section */
+.faq-section {
+    padding: 80px 0;
+    background-color: var(--white);
+}
+
+.faq-section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: var(--navy);
+    font-weight: 700;
+    text-align: center;
+}
+
+.faq-subtitle {
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--gray);
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.faq-question {
+    background-color: var(--light-gray);
+    padding: 15px 20px;
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--navy);
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+.faq-question:hover {
+    background-color: #e9ecef;
+}
+
+.toggle-icon {
+    color: var(--red);
+    transition: transform 0.3s;
+}
+
+.faq-item.active .toggle-icon i {
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.faq-item.active .faq-answer {
+    padding: 20px;
+    max-height: 1000px;
+}
+
+.faq-answer p {
+    margin-bottom: 15px;
+}
+
+.faq-answer p:last-child {
+    margin-bottom: 0;
+}
+
+.faq-answer ul, 
+.faq-answer ol {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.faq-answer li {
+    margin-bottom: 8px;
+}
+
+/* Final CTA Section */
+.final-cta {
+    padding: 80px 0;
+    background-color: var(--navy);
+    color: var(--white);
+    text-align: center;
+}
+
+.final-cta h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.final-cta p {
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .process-step {
+        flex: 0 0 48%;
+    }
+    
+    .testimonial {
+        flex: 0 0 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .process-step {
+        flex: 0 0 100%;
+    }
+    
+    .sou-hero h1 {
+        font-size: 2rem;
+    }
+    
+    .process-section h2,
+    .benefits-section h2,
+    .complete-process-section h2,
+    .faq-section h2,
+    .final-cta h2 {
+        font-size: 1.8rem;
+    }
+    
+    .price {
+        font-size: 2.5rem;
+    }
+} 
